@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Newsreader, Outfit } from "next/font/google";
+import { Plus_Jakarta_Sans, Source_Serif_4 } from "next/font/google";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { RevealScript } from "@/components/RevealScript";
@@ -7,22 +7,22 @@ import { StickyCta } from "@/components/StickyCta";
 import { site } from "@/lib/site";
 import "./globals.css";
 
-const outfit = Outfit({
+const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
-  variable: "--font-outfit",
+  variable: "--font-jakarta",
   display: "swap",
 });
 
-const newsreader = Newsreader({
+const sourceSerif = Source_Serif_4({
   subsets: ["latin"],
-  variable: "--font-newsreader",
+  variable: "--font-display-serif",
   display: "swap",
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} | ENT Specialist Vadodara`,
+    default: `${site.name} | Trusted ENT Care in Vadodara`,
     template: `%s | ${site.name}`,
   },
   description: site.support,
@@ -33,13 +33,13 @@ export const metadata: Metadata = {
     siteName: site.name,
     locale: "en_IN",
     type: "website",
-    images: [{ url: "/images/clinic-hero.jpeg", width: 1600, height: 1200 }],
+    images: [{ url: "/images/hero.jpg", width: 1600, height: 1200 }],
   },
   twitter: {
     card: "summary_large_image",
     title: site.name,
     description: site.promise,
-    images: ["/images/clinic-hero.jpeg"],
+    images: ["/images/hero.jpg"],
   },
   icons: {
     icon: "/images/favicon.png",
@@ -55,7 +55,7 @@ export default function RootLayout({
   return (
     <html lang="en-IN">
       <body
-        className={`${outfit.variable} ${newsreader.variable} site-atmosphere has-sticky-cta antialiased`}
+        className={`${jakarta.variable} ${sourceSerif.variable} site-atmosphere has-sticky-cta antialiased`}
       >
         <Header />
         <main>{children}</main>

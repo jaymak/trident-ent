@@ -25,12 +25,12 @@ export default function BlogPage() {
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className="border border-teal-900/10 bg-white p-5 transition hover:border-teal-700/40"
+                className="border border-brand-900/10 bg-white p-5 transition hover:border-brand-700/40"
               >
-                <p className="text-xs font-semibold uppercase tracking-[0.12em] text-teal-700">
+                <p className="text-xs font-semibold uppercase tracking-[0.12em] text-brand-700">
                   {post.date}
                 </p>
-                <h2 className="mt-2 font-display text-2xl text-teal-950">
+                <h2 className="mt-2 font-display text-2xl text-brand-950">
                   {post.title}
                 </h2>
                 <p className="mt-2 text-sm text-ink-muted">{post.description}</p>

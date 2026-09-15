@@ -9,11 +9,11 @@ export function CtaBand({
   text?: string;
 }) {
   return (
-    <section className="section bg-teal-950 text-white">
+    <section className="section bg-brand-950 text-white">
       <div className="container reveal flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
         <div className="max-w-xl">
           <h2 className="font-display text-3xl md:text-4xl">{title}</h2>
-          <p className="mt-3 text-mint/90">{text}</p>
+          <p className="mt-3 text-gold-soft/90">{text}</p>
         </div>
         <div className="flex flex-wrap gap-3">
           <a className="btn btn-primary" href={whatsappHref()}>

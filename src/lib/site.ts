@@ -2,9 +2,12 @@ export const site = {
   name: "Trident ENT Hospital",
   tagline: "Power To Heal",
   promise:
-    "Precise ENT care in Vadodara — diagnosis first, no unnecessary follow-ups.",
+    "Trusted ENT care in Vadodara — clear diagnosis, modern facilities, and thoughtful follow-up for families in India and abroad.",
   support:
-    "Specialist ear, nose, and throat care from Dr. Nishit Gupta at Trident ENT Hospital, Vadodara.",
+    "Trident ENT Hospital in Vadodara offers specialist ear, nose, and throat care with Dr. Nishit Gupta — trusted by local families, NRIs, and international patients.",
+  headline: "Trusted ENT care for families in India and abroad",
+  supportLine:
+    "From first consultation to recovery, Dr. Nishit Gupta focuses on accurate diagnosis, modern ENT practice, and care that feels personal — whether you live in Vadodara or are visiting from overseas.",
   url: "https://entvadodara.in",
   email: "entvadodara@gmail.com",
   appointmentPhone: "+919157331110",
@@ -150,7 +153,7 @@ export const doctor = {
   role: "ENT Surgeon",
   experience: "10+ years",
   summary:
-    "ENT surgeon in Vadodara focused on accurate diagnosis, careful treatment plans, and avoiding unnecessary follow-ups.",
+    "ENT surgeon in Vadodara known for accurate diagnosis, clear communication, and careful treatment plans — trusted by local families, returning NRIs, and visitors seeking reliable ENT care.",
   bio: [
     "Dr. Nishit Gupta is a well-known ENT surgeon in Vadodara with over 10 years of experience. He obtained his MBBS from Pondicherry University and worked as a medical oncology registrar at Apollo Oncology Hospital in Chennai.",
     "His passion for ENT led him to pursue M.S. ENT from Bharati Vidyapeeth University, Pune. He then served as a senior registrar at BMC Hospital in Mumbai and trained under well-known international surgeons.",

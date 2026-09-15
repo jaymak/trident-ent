@@ -22,7 +22,7 @@ export default function PatientInfoPage() {
         </div>
       </section>
 
-      <section className="section bg-paper-deep/40">
+      <section className="section bg-paper-warm/40">
         <div className="container prose-clinic max-w-3xl">
           <h2>What to bring</h2>
           <ul>

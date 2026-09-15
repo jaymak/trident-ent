@@ -1,13 +1,20 @@
 import Link from "next/link";
+import Image from "next/image";
 import { locations, nav, site, telHref, whatsappHref } from "@/lib/site";
 
 export function Footer() {
   return (
-    <footer className="border-t border-teal-900/10 bg-teal-950 text-mint-soft">
+    <footer className="border-t border-gold/20 bg-brand-950 text-gold-soft">
       <div className="container grid gap-10 py-14 md:grid-cols-[1.2fr_1fr_1fr]">
         <div>
-          <p className="font-display text-2xl text-white">{site.name}</p>
-          <p className="mt-3 max-w-sm text-sm leading-relaxed text-mint/90">
+          <Image
+            src="/images/logo.png"
+            alt={site.name}
+            width={180}
+            height={84}
+            className="h-12 w-auto brightness-110 contrast-125"
+          />
+          <p className="mt-4 max-w-sm text-sm leading-relaxed text-gold-soft/85">
             {site.promise}
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
@@ -24,7 +31,7 @@ export function Footer() {
         </div>
 
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.14em] text-mint">
+          <p className="text-xs font-semibold uppercase tracking-[0.14em] text-gold">
             Explore
           </p>
           <ul className="mt-4 space-y-2 text-sm">
@@ -39,14 +46,14 @@ export function Footer() {
         </div>
 
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.14em] text-mint">
+          <p className="text-xs font-semibold uppercase tracking-[0.14em] text-gold">
             Visit
           </p>
           <ul className="mt-4 space-y-4 text-sm">
             {locations.map((location) => (
               <li key={location.id}>
                 <p className="font-semibold text-white">{location.name}</p>
-                <p className="mt-1 text-mint/85">{location.address}</p>
+                <p className="mt-1 text-gold-soft/80">{location.address}</p>
               </li>
             ))}
           </ul>
@@ -55,7 +62,7 @@ export function Footer() {
               {site.email}
             </a>
           </p>
-          <p className="mt-2 text-sm text-mint/85">
+          <p className="mt-2 text-sm text-gold-soft/80">
             Emergency:{" "}
             <a className="hover:text-white" href={telHref(site.emergencyPhone)}>
               {site.emergencyPhoneDisplay}
@@ -63,8 +70,8 @@ export function Footer() {
           </p>
         </div>
       </div>
-      <div className="border-t border-white/10 py-4 text-center text-xs text-mint/70">
-        © {new Date().getFullYear()} {site.name}. Precise ENT care in Vadodara.
+      <div className="border-t border-white/10 py-4 text-center text-xs text-gold-soft/65">
+        © {new Date().getFullYear()} {site.name}. Trusted ENT care in Vadodara.
       </div>
     </footer>
   );

@@ -27,7 +27,7 @@ export default async function BlogPostPage({ params }: Props) {
       <article className="section">
         <div className="container max-w-3xl">
           <p className="section-kicker">
-            <Link href="/blog" className="hover:text-teal-900">
+            <Link href="/blog" className="hover:text-brand-900">
               Blog
             </Link>
           </p>

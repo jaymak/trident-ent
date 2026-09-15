@@ -25,13 +25,13 @@ export default function ServicesPage() {
               <Link
                 key={service.slug}
                 href={`/services/${service.slug}`}
-                className="group border border-teal-900/10 bg-white p-5 transition hover:border-teal-700/40 hover:shadow-[0_16px_40px_rgba(6,40,36,0.08)]"
+                className="group border border-brand-900/10 bg-white p-5 transition hover:border-brand-700/40 hover:shadow-[0_16px_40px_rgba(6,40,36,0.08)]"
               >
-                <h2 className="font-display text-2xl text-teal-950 group-hover:text-teal-800">
+                <h2 className="font-display text-2xl text-brand-950 group-hover:text-brand-800">
                   {service.title}
                 </h2>
                 <p className="mt-2 text-sm text-ink-muted">{service.summary}</p>
-                <span className="mt-4 inline-block text-sm font-semibold text-teal-800">
+                <span className="mt-4 inline-block text-sm font-semibold text-brand-800">
                   Learn more →
                 </span>
               </Link>

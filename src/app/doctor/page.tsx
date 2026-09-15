@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { CtaBand } from "@/components/CtaBand";
 import { doctor, site, telHref, whatsappHref } from "@/lib/site";
@@ -12,7 +13,17 @@ export default function DoctorPage() {
   return (
     <>
       <section className="section">
-        <div className="container grid gap-10 md:grid-cols-[1.1fr_0.9fr] md:items-start">
+        <div className="container grid gap-10 md:grid-cols-[0.9fr_1.1fr] md:items-start">
+          <div className="portrait-frame mx-auto aspect-[4/5] w-full max-w-sm md:mx-0">
+            <Image
+              src="/images/doctor-portrait.jpeg"
+              alt={`${doctor.name}, ENT Surgeon`}
+              width={700}
+              height={900}
+              className="h-full w-full object-cover object-top"
+              priority
+            />
+          </div>
           <div>
             <p className="section-kicker">ENT specialist</p>
             <h1 className="section-title font-display">{doctor.name}</h1>
@@ -31,18 +42,18 @@ export default function DoctorPage() {
                 Call {site.appointmentPhoneDisplay}
               </a>
             </div>
+            <ul className="mt-8 space-y-3 soft-panel p-5">
+              {doctor.credentials.map((item) => (
+                <li key={item} className="text-sm text-ink-muted">
+                  {item}
+                </li>
+              ))}
+            </ul>
           </div>
-          <ul className="space-y-3 border border-teal-900/10 bg-white p-5">
-            {doctor.credentials.map((item) => (
-              <li key={item} className="text-sm text-ink-muted">
-                {item}
-              </li>
-            ))}
-          </ul>
         </div>
       </section>
 
-      <section className="section bg-paper-deep/50">
+      <section className="section bg-paper-warm/50">
         <div className="container prose-clinic max-w-3xl">
           <h2 className="font-display text-3xl text-ink">Background</h2>
           {doctor.bio.map((paragraph) => (
@@ -50,11 +61,11 @@ export default function DoctorPage() {
           ))}
           <p>
             Prefer a shorter overview? See{" "}
-            <Link href="/services" className="font-semibold text-teal-800">
+            <Link href="/services" className="font-semibold text-brand-800">
               services
             </Link>{" "}
             or{" "}
-            <Link href="/contact" className="font-semibold text-teal-800">
+            <Link href="/contact" className="font-semibold text-brand-800">
               book a visit
             </Link>
             .

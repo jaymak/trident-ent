@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { nav, site, telHref, whatsappHref } from "@/lib/site";
@@ -15,15 +16,22 @@ export function Header() {
   }, [open]);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-teal-900/10 bg-paper/90 backdrop-blur-md">
-      <div className="container flex items-center justify-between gap-4 py-3 md:py-4">
-        <Link href="/" className="min-w-0" onClick={() => setOpen(false)}>
-          <span className="font-display block text-xl leading-none tracking-tight text-teal-950 md:text-2xl">
-            {site.name}
-          </span>
-          <span className="mt-1 block text-[0.7rem] font-semibold uppercase tracking-[0.14em] text-teal-700">
-            {site.tagline}
-          </span>
+    <header className="sticky top-0 z-40 border-b border-brand-700/10 bg-paper/92 backdrop-blur-md">
+      <div className="container flex items-center justify-between gap-4 py-2.5 md:py-3">
+        <Link
+          href="/"
+          className="flex min-w-0 items-center gap-3"
+          onClick={() => setOpen(false)}
+        >
+          <Image
+            src="/images/logo.png"
+            alt={site.name}
+            width={168}
+            height={78}
+            className="h-11 w-auto md:h-12"
+            priority
+          />
+          <span className="sr-only">{site.name}</span>
         </Link>
 
         <nav className="hidden items-center gap-6 lg:flex" aria-label="Primary">
@@ -31,7 +39,7 @@ export function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm font-medium text-ink-muted transition hover:text-teal-900"
+              className="text-sm font-medium text-ink-muted transition hover:text-brand-900"
             >
               {item.label}
             </Link>
@@ -49,7 +57,7 @@ export function Header() {
 
         <button
           type="button"
-          className="inline-flex h-11 w-11 items-center justify-center border border-teal-900/20 text-teal-900 lg:hidden"
+          className="inline-flex h-11 w-11 items-center justify-center border border-brand-700/20 text-brand-900 lg:hidden"
           aria-expanded={open}
           aria-controls="mobile-nav"
           aria-label={open ? "Close menu" : "Open menu"}
@@ -73,14 +81,14 @@ export function Header() {
       {open ? (
         <div
           id="mobile-nav"
-          className="border-t border-teal-900/10 bg-paper px-5 py-6 lg:hidden"
+          className="border-t border-brand-700/10 bg-paper px-5 py-6 lg:hidden"
         >
           <nav className="flex flex-col gap-4" aria-label="Mobile">
             {nav.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-lg font-medium text-teal-950"
+                className="text-lg font-medium text-brand-950"
                 onClick={() => setOpen(false)}
               >
                 {item.label}

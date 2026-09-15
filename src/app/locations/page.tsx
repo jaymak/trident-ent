@@ -23,9 +23,9 @@ export default function LocationsPage() {
             {locations.map((location) => (
               <article
                 key={location.id}
-                className="border border-teal-900/10 bg-white p-6"
+                className="border border-brand-900/10 bg-white p-6"
               >
-                <h2 className="font-display text-2xl text-teal-950">
+                <h2 className="font-display text-2xl text-brand-950">
                   {location.name}
                 </h2>
                 <p className="mt-3 text-ink-muted">{location.address}</p>
@@ -53,7 +53,7 @@ export default function LocationsPage() {
           <p className="mt-8 text-sm text-ink-muted">
             Appointment:{" "}
             <a
-              className="font-semibold text-teal-800"
+              className="font-semibold text-brand-800"
               href={telHref(site.appointmentPhone)}
             >
               {site.appointmentPhoneDisplay}
@@ -61,7 +61,7 @@ export default function LocationsPage() {
             {" · "}
             Emergency:{" "}
             <a
-              className="font-semibold text-teal-800"
+              className="font-semibold text-brand-800"
               href={telHref(site.emergencyPhone)}
             >
               {site.emergencyPhoneDisplay}

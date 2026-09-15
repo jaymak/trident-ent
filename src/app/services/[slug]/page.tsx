@@ -30,7 +30,7 @@ export default async function ServiceDetailPage({ params }: Props) {
       <section className="section">
         <div className="container max-w-3xl">
           <p className="section-kicker">
-            <Link href="/services" className="hover:text-teal-900">
+            <Link href="/services" className="hover:text-brand-900">
               Services
             </Link>
           </p>
@@ -39,7 +39,7 @@ export default async function ServiceDetailPage({ params }: Props) {
         </div>
       </section>
 
-      <section className="section bg-paper-deep/40">
+      <section className="section bg-paper-warm/40">
         <div className="container prose-clinic max-w-3xl">
           {page.sections.map((section) => (
             <div key={section.heading}>
@@ -62,7 +62,7 @@ export default async function ServiceDetailPage({ params }: Props) {
       {related.length ? (
         <section className="section">
           <div className="container">
-            <h2 className="font-display text-2xl text-teal-950">
+            <h2 className="font-display text-2xl text-brand-950">
               Related care
             </h2>
             <div className="mt-6 grid gap-4 sm:grid-cols-3">
@@ -70,9 +70,9 @@ export default async function ServiceDetailPage({ params }: Props) {
                 <Link
                   key={item.slug}
                   href={`/services/${item.slug}`}
-                  className="border border-teal-900/10 bg-white p-4 text-sm"
+                  className="border border-brand-900/10 bg-white p-4 text-sm"
                 >
-                  <p className="font-display text-lg text-teal-950">
+                  <p className="font-display text-lg text-brand-950">
                     {item.title}
                   </p>
                   <p className="mt-1 text-ink-muted">{item.short}</p>

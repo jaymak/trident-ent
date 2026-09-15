@@ -28,7 +28,7 @@ export default function ContactPage() {
               <p>
                 Appointment:{" "}
                 <a
-                  className="font-semibold text-teal-800"
+                  className="font-semibold text-brand-800"
                   href={telHref(site.appointmentPhone)}
                 >
                   {site.appointmentPhoneDisplay}
@@ -37,7 +37,7 @@ export default function ContactPage() {
               <p className="mt-2">
                 Emergency:{" "}
                 <a
-                  className="font-semibold text-teal-800"
+                  className="font-semibold text-brand-800"
                   href={telHref(site.emergencyPhone)}
                 >
                   {site.emergencyPhoneDisplay}
@@ -46,7 +46,7 @@ export default function ContactPage() {
               <p className="mt-2">
                 Email:{" "}
                 <a
-                  className="font-semibold text-teal-800"
+                  className="font-semibold text-brand-800"
                   href={`mailto:${site.email}`}
                 >
                   {site.email}
@@ -57,8 +57,8 @@ export default function ContactPage() {
 
           <div className="mt-10 space-y-4">
             {locations.map((location) => (
-              <div key={location.id} className="border-t border-teal-900/10 pt-4">
-                <h2 className="font-display text-xl text-teal-950">
+              <div key={location.id} className="border-t border-brand-900/10 pt-4">
+                <h2 className="font-display text-xl text-brand-950">
                   {location.name}
                 </h2>
                 <p className="mt-1 text-sm text-ink-muted">{location.address}</p>

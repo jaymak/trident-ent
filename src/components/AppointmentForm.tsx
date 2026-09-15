@@ -30,7 +30,7 @@ export function AppointmentForm() {
     <form
       id="book"
       onSubmit={onSubmit}
-      className="space-y-4 border border-teal-900/10 bg-white p-6 shadow-[0_18px_50px_rgba(6,40,36,0.08)]"
+      className="space-y-4 border border-brand-900/10 bg-white p-6 shadow-[0_18px_50px_rgba(6,40,36,0.08)]"
     >
       <div>
         <h2 className="font-display text-2xl text-ink">Request an appointment</h2>
@@ -45,7 +45,7 @@ export function AppointmentForm() {
         <input
           required
           name="name"
-          className="mt-1.5 w-full border border-teal-900/15 bg-paper px-3 py-2.5 outline-none focus:border-teal-700"
+          className="mt-1.5 w-full border border-brand-900/15 bg-paper px-3 py-2.5 outline-none focus:border-brand-700"
           autoComplete="name"
         />
       </label>
@@ -56,7 +56,7 @@ export function AppointmentForm() {
           required
           name="phone"
           type="tel"
-          className="mt-1.5 w-full border border-teal-900/15 bg-paper px-3 py-2.5 outline-none focus:border-teal-700"
+          className="mt-1.5 w-full border border-brand-900/15 bg-paper px-3 py-2.5 outline-none focus:border-brand-700"
           autoComplete="tel"
         />
       </label>
@@ -66,7 +66,7 @@ export function AppointmentForm() {
         <select
           required
           name="location"
-          className="mt-1.5 w-full border border-teal-900/15 bg-paper px-3 py-2.5 outline-none focus:border-teal-700"
+          className="mt-1.5 w-full border border-brand-900/15 bg-paper px-3 py-2.5 outline-none focus:border-brand-700"
           defaultValue={locations[0]?.name}
         >
           {locations.map((location) => (
@@ -82,7 +82,7 @@ export function AppointmentForm() {
         <textarea
           name="concern"
           rows={4}
-          className="mt-1.5 w-full border border-teal-900/15 bg-paper px-3 py-2.5 outline-none focus:border-teal-700"
+          className="mt-1.5 w-full border border-brand-900/15 bg-paper px-3 py-2.5 outline-none focus:border-brand-700"
           placeholder="Ear pain, sinus block, vertigo…"
         />
       </label>
@@ -92,7 +92,7 @@ export function AppointmentForm() {
       </button>
 
       {status === "sent" ? (
-        <p className="text-sm text-teal-800" role="status">
+        <p className="text-sm text-brand-800" role="status">
           WhatsApp should open with your request. If it does not, message{" "}
           {site.appointmentPhoneDisplay} directly.
         </p>
