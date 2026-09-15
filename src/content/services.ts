@@ -47,9 +47,9 @@ export const servicePages: ServicePage[] = [
     slug: "nose-sinus",
     title: "Nose & sinus",
     description:
-      "Medical and endoscopic treatment for nose block, sinusitis, and nasal polyps in Vadodara.",
+      "Medical and endoscopic treatment for nose block, sinusitis, polyps, DCR, and functional rhinoplasty in Vadodara.",
     intro:
-      "Nose block and sinusitis are treated medically first when appropriate. When anatomy or chronic disease blocks drainage, endoscopic surgery can restore airflow.",
+      "Nose block and sinusitis are treated medically first when appropriate. When anatomy or chronic disease blocks drainage, endoscopic surgery can restore airflow — with plans based on examination, not a one-size approach.",
     sections: [
       {
         heading: "Medical care",
@@ -58,10 +58,31 @@ export const servicePages: ServicePage[] = [
         ],
       },
       {
-        heading: "Surgical options",
+        heading: "Endoscopic nasal surgery",
         body: [
-          "For chronic or severe disease, options may include endoscopic sinus surgery, balloon sinuplasty, or functional endoscopic sinus surgery (FESS) to clear obstruction and improve natural drainage.",
-          "The right plan depends on examination and imaging — not a one-size approach.",
+          "Endoscopic nose surgery uses a thin camera through the nostrils — typically less invasive than open approaches, with a faster recovery when surgery is needed.",
+        ],
+        bullets: [
+          "Chronic sinusitis — functional endoscopic sinus surgery (FESS) for facial pain, blockage, and discharge that do not settle medically",
+          "Nasal polyps — endoscopic removal, often with powered instruments",
+          "Deviated septum — endoscopic septoplasty to improve airflow",
+          "Other obstruction — enlarged turbinates, scar tissue, or retained foreign material",
+          "Selected sinus cysts or tumours — endoscopic removal when appropriate",
+          "Recurrent severe nosebleeds — endoscopic cautery or vessel control when vessels are the source",
+        ],
+      },
+      {
+        heading: "Endoscopic DCR",
+        body: [
+          "Endoscopic dacryocystorhinostomy (DCR) treats blockage in the tear drainage system that causes chronic tearing and recurrent eye infections.",
+          "Through the nose, a new pathway is created between the tear sac and the nasal cavity so tears can drain again — usually without an external skin incision, which means less scarring and quicker recovery than traditional open DCR.",
+        ],
+      },
+      {
+        heading: "Rhinoplasty (functional & reconstructive)",
+        body: [
+          "Rhinoplasty reshapes the nose for appearance and/or breathing. ENT surgeons with nasal-airway expertise are well placed when obstruction, trauma, or septal deformity is part of the problem.",
+          "Open or closed techniques are chosen based on goals — correcting airflow as carefully as form.",
         ],
       },
     ],

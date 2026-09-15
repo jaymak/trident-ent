@@ -159,6 +159,7 @@ export const doctor = {
     "His passion for ENT led him to pursue M.S. ENT from Bharati Vidyapeeth University, Pune. He then served as a senior registrar at BMC Hospital in Mumbai and trained under well-known international surgeons.",
     "He is Associate Professor at Dhiraj Hospital (Sumandeep Vidyapeeth), associated with multi-speciality hospitals in Vadodara, and completed a certified course in advanced allergy and immunotherapy.",
     "In 2022 he founded Trident ENT Hospital to deliver specialised ENT care with modern facilities — precise diagnosis first, then the right medical or surgical path.",
+    "ENT covers three senses people rely on every day — smell, hearing, and taste — plus head and neck disease. Trident’s aim is clear diagnosis and effective treatment with fewer unnecessary follow-ups or antibiotics, while recognising when surgery is the safer path.",
   ],
   credentials: [
     "MBBS — Pondicherry University",
@@ -174,8 +175,23 @@ export const legacyRedirects: { source: string; destination: string }[] = [
   { source: "/about-us/", destination: "/doctor" },
   { source: "/ear", destination: "/services/ear" },
   { source: "/ear/", destination: "/services/ear" },
+  // Live WP menu shortcuts (nose → allergy page; throat → throat service)
+  { source: "/nose", destination: "/services/allergy" },
+  { source: "/nose/", destination: "/services/allergy" },
+  { source: "/throat", destination: "/services/throat-head-neck" },
+  { source: "/throat/", destination: "/services/throat-head-neck" },
   { source: "/nose-block-sinusitis", destination: "/services/nose-sinus" },
   { source: "/nose-block-sinusitis/", destination: "/services/nose-sinus" },
+  {
+    source:
+      "/expert-ent-care-conquer-nose-block-sinusitis-nose-polyp-allergies-sneezing",
+    destination: "/services/nose-sinus",
+  },
+  {
+    source:
+      "/expert-ent-care-conquer-nose-block-sinusitis-nose-polyp-allergies-sneezing/",
+    destination: "/services/nose-sinus",
+  },
   { source: "/nose-allergy-immunotherapy", destination: "/services/allergy" },
   { source: "/nose-allergy-immunotherapy/", destination: "/services/allergy" },
   {
@@ -192,4 +208,9 @@ export const legacyRedirects: { source: string; destination: string }[] = [
   { source: "/blogs/", destination: "/blog" },
   { source: "/blogs/foreign-body", destination: "/blog/foreign-body" },
   { source: "/blogs/foreign-body/", destination: "/blog/foreign-body" },
+  { source: "/category/blog", destination: "/blog" },
+  { source: "/category/blog/", destination: "/blog" },
+  // WordPress placeholder post — no clinical content
+  { source: "/hello-world", destination: "/blog" },
+  { source: "/hello-world/", destination: "/blog" },
 ];

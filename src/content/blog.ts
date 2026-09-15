@@ -14,8 +14,8 @@ export const blogPosts: BlogPost[] = [
       "What to do if something is stuck in the ear, nose, or throat — and when to see an ENT in Vadodara.",
     date: "2023-08-07",
     body: [
-      "Children and adults sometimes get beads, insects, food, or other objects stuck in the ear or nose. Throat foreign bodies can be more urgent, especially if breathing is affected.",
-      "Do not dig with cotton buds or sharp tools — that can push the object deeper or injure the canal. Seek ENT care for safe removal under proper lighting and instruments.",
+      "An ENT specialist is trained to remove foreign bodies from the ear, nose, and throat. Lodged objects can cause pain, discomfort, and complications if left untreated.",
+      "Do not try to dig the object out yourself with cotton buds or sharp tools — that can push it deeper or injure the canal. Go to an emergency department or contact an ENT for prompt, instrumented removal under proper light.",
       "If there is breathing difficulty, drooling, or severe pain, treat it as an emergency and call the hospital emergency number.",
     ],
   },
@@ -27,8 +27,8 @@ export const blogPosts: BlogPost[] = [
     date: "2023-08-23",
     body: [
       "Persistent nose block can come from infection, allergy, polyps, or anatomical obstruction. Guessing with repeated antibiotics often fails and can cause side effects.",
-      "An ENT evaluation looks at the nasal passages, sinus drainage, and allergy history. Medical therapy is tried when it fits; endoscopic surgery is reserved for clear structural or chronic disease needs.",
-      "Allergy testing helps when sneezing and congestion follow seasons or dust exposure — so treatment targets the trigger, not only the symptom.",
+      "An ENT evaluation looks at the nasal passages, sinus drainage, and allergy history. Medical therapy is tried when it fits; endoscopic surgery is reserved for clear structural or chronic disease needs — including FESS, polyp removal, and septoplasty when indicated.",
+      "Allergy testing helps when sneezing and congestion follow seasons or dust exposure — so treatment targets the trigger, not only the symptom. For full procedure detail, see the nose & sinus service page.",
     ],
   },
   {
